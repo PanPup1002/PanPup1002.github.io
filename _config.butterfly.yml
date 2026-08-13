@@ -22,12 +22,17 @@ menu:
   List||fas fa-list:
     Music: /music/ || fas fa-music
     Tags: /tags/ || fas fa-tags
-    Categories: /categories/ || fas fa-folder-open
 
 # 站内搜索
 search:
   use: local_search
   placeholder: Search
+
+# 访问统计（不蒜子）
+busuanzi:
+  site_uv: true    # 站点总访问人数
+  site_pv: true    # 站点总访问量
+  page_pv: true    # 单页访问量
 
 # 社交链接（图标: 链接 || 文字说明 || 颜色）
 social:
