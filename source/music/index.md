@@ -17,6 +17,21 @@ const ap = new APlayer({
     artist: 'HHYB',
     url: '/music/fractures.mp3',
     cover: '/music/fractures.jpg'
+  }, {
+    name: '椿 (Live)',
+    artist: 'Jabo',
+    url: '/music/chun.mp3',
+    cover: '/music/chun.jpg'
+  }, {
+    name: 'Love Is Gone (Acoustic)',
+    artist: 'SLANDER / Dylan Matthew',
+    url: '/music/loveisgone.mp3',
+    cover: '/music/loveisgone.jpg'
+  }, {
+    name: "It's You",
+    artist: 'HENRY 刘宪华',
+    url: '/music/itsyou.mp3',
+    cover: '/music/itsyou.jpg'
   }],
   order: 'list',
   loop: 'all',
