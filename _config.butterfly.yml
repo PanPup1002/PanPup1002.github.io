@@ -17,10 +17,17 @@ default_top_img: /img/background.jpg
 
 # 导航菜单（显示名: 路径 || 图标）
 menu:
-  首页: / || fas fa-home
-  归档: /archives/ || fas fa-archive
-  标签: /tags/ || fas fa-tags
-  分类: /categories/ || fas fa-folder-open
+  Home: / || fas fa-home
+  Archives: /archives/ || fas fa-archive
+  List||fas fa-list:
+    Music: /music/ || fas fa-music
+    Tags: /tags/ || fas fa-tags
+    Categories: /categories/ || fas fa-folder-open
+
+# 站内搜索
+search:
+  use: local_search
+  placeholder: Search
 
 # 社交链接（图标: 链接 || 文字说明 || 颜色）
 social:
@@ -31,7 +38,7 @@ social:
 aside:
   card_author:
     # 作者卡片里的简介文字
-    description: 摸鱼中，请勿打扰
+    description: Slacking at work, please don't disturb
     button:
       enable: true
       icon: fab fa-github
@@ -39,7 +46,7 @@ aside:
       link: https://github.com/PanPup1002
   card_announcement:
     enable: true
-    content: 欢迎来到我的博客，随便逛逛～
+    content: Welcome to my blog, feel free to look around~
 
 # 页脚
 footer:
@@ -48,4 +55,4 @@ footer:
     since: 2026
   copyright:
     enable: true
-  custom_text: 上班摸鱼，快乐加倍
+  custom_text: Slacking at work, double the fun

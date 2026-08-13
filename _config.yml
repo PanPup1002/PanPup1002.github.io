@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 摸鱼笔记
-subtitle: '上班无聊，写写博客'
-description: '一个程序员的摸鱼记录'
-keywords: 博客,技术,编程,摸鱼
+title: PanPup's World
+subtitle: ''
+description: 'A personal blog'
+keywords: blog, tech, programming
 author: PanPup
-language: zh-CN
+language: en
 timezone: Asia/Shanghai
 
 # URL
@@ -97,6 +97,13 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: butterfly
+
+# 搜索插件配置 (hexo-generator-searchdb)
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
 
 # Deployment
 ## 已改用 GitHub Actions 自动部署（源码推送后由工作流构建发布）
