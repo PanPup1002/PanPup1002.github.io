@@ -1,0 +1,51 @@
+# Butterfly 主题配置（覆盖主题默认值）
+# 完整配置项参考: node_modules/hexo-theme-butterfly/_config.yml
+
+# 头像
+avatar:
+  img: /img/avatar.jpg
+  effect: false
+
+# 网站背景（整页背景图）
+background: /img/background.jpg
+
+# 首页顶部大图（banner）
+index_img: /img/background.jpg
+
+# 其他页面默认 banner（归档、分类、标签等没有单独设置时的兜底图）
+default_top_img: /img/background.jpg
+
+# 导航菜单（显示名: 路径 || 图标）
+menu:
+  首页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+
+# 社交链接（图标: 链接 || 文字说明 || 颜色）
+social:
+  fab fa-github: https://github.com/PanPup1002 || GitHub || '#24292e'
+  fas fa-envelope: mailto:lfan54182@gmail.com || Email || '#4a7dbe'
+
+# 侧边栏
+aside:
+  card_author:
+    # 作者卡片里的简介文字
+    description: 摸鱼中，请勿打扰
+    button:
+      enable: true
+      icon: fab fa-github
+      text: Follow Me
+      link: https://github.com/PanPup1002
+  card_announcement:
+    enable: true
+    content: 欢迎来到我的博客，随便逛逛～
+
+# 页脚
+footer:
+  owner:
+    enable: true
+    since: 2026
+  copyright:
+    enable: true
+  custom_text: 上班摸鱼，快乐加倍
