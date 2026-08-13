@@ -34,6 +34,12 @@ busuanzi:
   site_pv: true    # 站点总访问量
   page_pv: true    # 单页访问量
 
+# 夜间模式切换
+darkmode:
+  enable: true
+  button: true        # 右上角显示 太阳/月亮 切换按钮
+  autoChangeMode: 2   # 2=18:00-06:00 自动切夜间，1=跟随系统，false=手动
+
 # 社交链接（图标: 链接 || 文字说明 || 颜色）
 social:
   fab fa-github: https://github.com/PanPup1002 || GitHub || '#24292e'
