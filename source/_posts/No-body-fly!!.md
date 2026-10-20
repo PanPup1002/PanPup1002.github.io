@@ -293,7 +293,8 @@ ida_kernwin.info("1.bin recovery complete: vectors, startup, RAM, 163 variables,
 | `gps_lon`     | `0x20003E3B` | `5 / i32`（注意未对齐） | GPS 经度，通常和 `gps_lat` 使用相同的 1e-7° 缩放。                               |
 | `gps_alt`     | `0x20003E3F` | `4 / 32-bit 值`   | GPS 高度。可能是海拔、椭球高或相对高度，单位可能为米；需要追踪 GPS 协议解析和坐标转换函数确认。较可能为 `float`。  |
 | `rtk_lat`     | `0x20008C19` | `5 / i32`        | RTK 定位结果纬度，通常精度和优先级高于普通 GPS。大概率也是 度 × 10^7。                        |
-| `gyro_bias_x` | `0x2000C8A4` | `4 / float`      | X 轴陀螺仪零偏估计。姿态解算前会从原始 X 轴角速度中减掉该值，避免姿态随时间漂移。                        |
+| `gyro_bias_x` | `0x2000C8A4` | `4 / float`      | X 轴陀螺仪零偏估计。姿态解算前会从原始 X 轴角速度中减掉该值，避免姿态随时间漂移。
+
 `flight_mode`![](/images/Pasted%20image%2020260920104748.png)
 `is_flying`
 ![](/images/Pasted%20image%2020260920105521.png)
@@ -309,6 +310,7 @@ ida_kernwin.info("1.bin recovery complete: vectors, startup, RAM, 163 variables,
 |USART3|`0x40004800`|115200|8N1|RX+TX；TX 使用 DMA1 Stream4|
 |USART6|`0x40011400`|100000|8E2|仅 RX；高度符合 SBUS 接收口|
 |UART7|`0x40007800`|115200|8N1|RX+TX；发现固定二进制帧发送代码|
+
 基址
 ![](/images/Pasted%20image%2020260920112524.png)
 UART4、UART5 和 UART8 的基址只出现在通用 STM32 串口库的“按外设开关时钟”分派函数中

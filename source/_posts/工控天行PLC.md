@@ -33,6 +33,7 @@ https://mp.weixin.qq.com/s/Lsy9SixDDzK58t4PRyDceQ
 | `c_rdev_min` | 8   | `00000000` |
 | `c_namesize` | 8   | `0000000F` |
 | `c_chksum`   | 8   | `0001C0BC` |
+
 ![](/images/Pasted%20image%2020260929151339.png)![](/images/Pasted%20image%2020260929151404.png)
 后面很多cpio，所以binwalk对边界进行定位
 ![](/images/Pasted%20image%2020260929161751.png)
